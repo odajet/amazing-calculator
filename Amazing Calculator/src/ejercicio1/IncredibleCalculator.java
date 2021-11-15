@@ -14,6 +14,7 @@ public class IncredibleCalculator {
         System.out.println("5. Dividir (división con decimales)");
 
         int opcion = leerEnteroEntrada();
+        int num1,num2,producto;
 
 
         switch (opcion) {
@@ -22,7 +23,13 @@ public class IncredibleCalculator {
             case 2: // Restar. Debes leer dos números enteros de entrada e imprimir su resta
                     break;
             case 3: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su producto.
-                    break;
+                System.out.println("Dame numerador");
+                num1=leerEnteroEntrada();
+                System.out.println("Dame denominador");
+                num2=leerEnteroEntrada();
+                producto=num1*num2;
+
+            	break;
             case 4: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división entera.
                     break;
             case 5: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división con decimales.
